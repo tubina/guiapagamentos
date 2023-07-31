@@ -45,6 +45,11 @@ app.get("/pagar", async(req, res)=>{
 
 });
 
+app.post("/not", (req, res)=>{
+    console.log(req.body);
+    res.send("ok");
+});
+
 app.listen(3000, ()=>{
     console.log("servidor rodando ");
 });
