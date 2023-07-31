@@ -50,6 +50,6 @@ app.post("/not", (req, res)=>{
     res.send("ok");
 });
 
-app.listen(3000, ()=>{
+app.listen(80, ()=>{
     console.log("servidor rodando ");
 });
