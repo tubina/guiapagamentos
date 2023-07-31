@@ -35,7 +35,7 @@ app.get("/pagar", async(req, res)=>{
 
     try{
         var pagamento = await MercadoPago.preferences.create(dados);
-        console.log(pagamento);
+        //console.log(pagamento);
         // aqui que eu colocaria o salvamento 
         // no banco de dados
         return res.redirect(pagamento.body.init_point);
