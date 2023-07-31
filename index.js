@@ -45,7 +45,7 @@ app.get("/pagar", async(req, res)=>{
 
 });
 
-app.get("/not", (req, res)=>{
+app.post("/not", (req, res)=>{
     console.log(req.query);
     res.send("ok");
 });
